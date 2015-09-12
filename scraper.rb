@@ -54,7 +54,7 @@ def scrape_person(person)
   noko = noko_for(person[:source])
   data = { 
     district: noko.css('.bio-i--rg .bio-i--cnt').text,
-    party: noko.css('.bio-i--lbl .bio-i--cnt').text,
+    party: noko.css('.bio-i--pt .bio-i--cnt').text,
     birth_year: noko.css('.bio-i--by .bio-i--cnt').text,
   }
 end
