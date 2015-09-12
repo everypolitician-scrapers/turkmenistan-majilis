@@ -78,7 +78,7 @@ terms = [
 terms.each do |term|
   puts term
   ScraperWiki.save_sqlite([:id], term, 'terms')
-  # scrape_term(term, term[:source])
+  scrape_term(term, term[:source])
 end
 
 
